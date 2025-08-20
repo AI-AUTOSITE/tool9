@@ -57,7 +57,7 @@ export default function HomePage() {
         }
         
         if (isTableSection && trimmedLine.startsWith('|')) {
-          const cells = trimmedLine.split('|').slice(1, -1).map(c => c.trim());
+          const cells = trimmedLine.split('|').slice(1, -1).map((c: string) => c.trim());
           if (cells.length >= 4 && !cells[0].includes('---')) {
             tools.push({
               name: cells[0],
