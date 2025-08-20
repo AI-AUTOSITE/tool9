@@ -84,10 +84,10 @@ export default function ExportButtons({ results }: ExportButtonsProps) {
           }
           
           doc.setFontSize(12);
-          doc.setFont(undefined, 'bold');
+          doc.setFont('helvetica', 'bold');
           doc.text(`${index + 1}. ${idea.title}`, 14, yPosition);
           
-          doc.setFont(undefined, 'normal');
+          doc.setFont('helvetica', 'normal');
           doc.setFontSize(10);
           yPosition += 8;
           
